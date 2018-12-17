@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: 8a08838e21b95fb4b9928f62ff9a7134
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: StudyDesk
+    100002: StudyDesk_BooksMags
+    100004: StudyDesk_BooksMags 1
+    100006: StudyDesk_Chair
+    100008: //RootNode
+    100010: StudyTable
+    100012: StudyTable 1
+    100014: transform1
+    100016: transform2
+    100018: transform3
+    100020: polySurface58
+    100022: polySurface59
+    100024: polySurface60
+    100026: polySurface61
+    100028: polySurface62
+    100030: polySurface63
+    100032: polySurface64
+    100034: polySurface65
+    100036: polySurface66
+    100038: polySurface67
+    100040: polySurface68
+    100042: polySurface69
+    100044: polySurface70
+    100046: polySurface71
+    100048: polySurface72
+    100050: polySurface73
+    100052: polySurface74
+    100054: transform73
+    400000: StudyDesk
+    400002: StudyDesk_BooksMags
+    400004: StudyDesk_BooksMags 1
+    400006: StudyDesk_Chair
+    400008: //RootNode
+    400010: StudyTable
+    400012: StudyTable 1
+    400014: transform1
+    400016: transform2
+    400018: transform3
+    400020: polySurface58
+    400022: polySurface59
+    400024: polySurface60
+    400026: polySurface61
+    400028: polySurface62
+    400030: polySurface63
+    400032: polySurface64
+    400034: polySurface65
+    400036: polySurface66
+    400038: polySurface67
+    400040: polySurface68
+    400042: polySurface69
+    400044: polySurface70
+    400046: polySurface71
+    400048: polySurface72
+    400050: polySurface73
+    400052: polySurface74
+    400054: transform73
+    2100000: lambert2
+    2100002: Book
+    2100004: Table2
+    2100006: lambert10
+    2100008: Chir
+    2300000: StudyDesk_BooksMags
+    2300002: polySurface58
+    2300004: polySurface59
+    2300006: polySurface60
+    2300008: polySurface61
+    2300010: polySurface62
+    2300012: polySurface63
+    2300014: polySurface64
+    2300016: polySurface65
+    2300018: polySurface66
+    2300020: polySurface67
+    2300022: polySurface68
+    2300024: polySurface69
+    2300026: polySurface70
+    2300028: polySurface71
+    2300030: polySurface72
+    2300032: polySurface73
+    2300034: polySurface74
+    3300000: StudyDesk_BooksMags
+    3300002: polySurface58
+    3300004: polySurface59
+    3300006: polySurface60
+    3300008: polySurface61
+    3300010: polySurface62
+    3300012: polySurface63
+    3300014: polySurface64
+    3300016: polySurface65
+    3300018: polySurface66
+    3300020: polySurface67
+    3300022: polySurface68
+    3300024: polySurface69
+    3300026: polySurface70
+    3300028: polySurface71
+    3300030: polySurface72
+    3300032: polySurface73
+    3300034: polySurface74
+    4300000: StudyDesk_BooksMags
+    4300002: polySurface58
+    4300004: polySurface59
+    4300006: polySurface60
+    4300008: polySurface61
+    4300010: polySurface62
+    4300012: polySurface63
+    4300014: polySurface64
+    4300016: polySurface65
+    4300018: polySurface66
+    4300020: polySurface67
+    4300022: polySurface68
+    4300024: polySurface69
+    4300026: polySurface70
+    4300028: polySurface71
+    4300030: polySurface72
+    4300032: polySurface73
+    4300034: polySurface74
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

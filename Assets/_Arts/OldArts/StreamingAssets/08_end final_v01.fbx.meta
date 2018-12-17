@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 9a441a1e795c940cbb7ef89864e0fc93
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: curve1
+    100004: curve2
+    100006: curve3
+    100008: curve4
+    100010: curve5
+    100012: flexiPlane01
+    100014: flexiPlane_bind_a01
+    100016: flexiPlane_bind_b01
+    100018: flexiPlane_bind_c01
+    100020: flexiPlane_bind_d01
+    100022: flexiPlane_bind_e01
+    100024: flexiPlane_cl_a01
+    100026: flexiPlane_cl_b01
+    100028: flexiPlane_cl_mid01
+    100030: flexiPlane_cls01
+    100032: flexiPlane_cnt_a01
+    100034: flexiPlane_cnt_b01
+    100036: flexiPlane_cnt_global01
+    100038: flexiPlane_cnts01
+    100040: flexiPlane_extraNodes01
+    100042: flexiPlane_flc_a01
+    100044: flexiPlane_flc_b01
+    100046: flexiPlane_flc_c01
+    100048: flexiPlane_flc_d01
+    100050: flexiPlane_flc_e01
+    100052: flexiPlane_flcs01
+    100054: flexiPlane_globalMove01
+    100056: flexiPlane_grp_midBend01
+    100058: flexiPlane_midBend01
+    100060: flexiPlane_twist_surface01
+    100062: flexiPlane_wire_surface01
+    100064: flexiPlane_wire_surface01BaseWire
+    100066: pCube1
+    400000: //RootNode
+    400002: curve1
+    400004: curve2
+    400006: curve3
+    400008: curve4
+    400010: curve5
+    400012: flexiPlane01
+    400014: flexiPlane_bind_a01
+    400016: flexiPlane_bind_b01
+    400018: flexiPlane_bind_c01
+    400020: flexiPlane_bind_d01
+    400022: flexiPlane_bind_e01
+    400024: flexiPlane_cl_a01
+    400026: flexiPlane_cl_b01
+    400028: flexiPlane_cl_mid01
+    400030: flexiPlane_cls01
+    400032: flexiPlane_cnt_a01
+    400034: flexiPlane_cnt_b01
+    400036: flexiPlane_cnt_global01
+    400038: flexiPlane_cnts01
+    400040: flexiPlane_extraNodes01
+    400042: flexiPlane_flc_a01
+    400044: flexiPlane_flc_b01
+    400046: flexiPlane_flc_c01
+    400048: flexiPlane_flc_d01
+    400050: flexiPlane_flc_e01
+    400052: flexiPlane_flcs01
+    400054: flexiPlane_globalMove01
+    400056: flexiPlane_grp_midBend01
+    400058: flexiPlane_midBend01
+    400060: flexiPlane_twist_surface01
+    400062: flexiPlane_wire_surface01
+    400064: flexiPlane_wire_surface01BaseWire
+    400066: pCube1
+    2300000: flexiPlane_midBend01
+    3300000: flexiPlane_midBend01
+    4300000: flexiPlane_midBend01
+    4300002: pCube1
+    7400000: Take 001
+    11100000: //RootNode
+    13700000: pCube1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flexiPlane_ss_midBend01
+    second: {fileID: 2100000, guid: b4bca7d72bb85484690baaec5f8a8470, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 7eb34eb3fdd44421abc48a714a51e13f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
