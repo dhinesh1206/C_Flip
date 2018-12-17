@@ -3611,8 +3611,6 @@ GameObject:
   - component: {fileID: 23253011565030522}
   - component: {fileID: 54054518539655472}
   - component: {fileID: 64141951287476586}
-  - component: {fileID: 114805835696930340}
-  - component: {fileID: 114736985154683780}
   m_Layer: 0
   m_Name: hexagon target (3)
   m_TagString: FinalPoint
@@ -4507,7 +4505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1413471920710980
 GameObject:
   m_ObjectHideFlags: 1
@@ -5619,7 +5617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1532143425556362
 GameObject:
   m_ObjectHideFlags: 1
@@ -30555,18 +30553,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   affachedTrampolin: {fileID: 1739540259114618}
   jumpingpadNumber: 2
---- !u!114 &114736985154683780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1322980909167410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6380d998eda647028de807c9bfdcfcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextCameraIndex: 3
 --- !u!114 &114750461369883056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30606,19 +30592,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   affachedTrampolin: {fileID: 1510375052385150}
   jumpingpadNumber: 2
---- !u!114 &114805835696930340
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1322980909167410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d99d3606a00a4d0c8f3993a153f9cc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  affachedTrampolin: {fileID: 1662088955834210}
-  jumpingpadNumber: 1
 --- !u!114 &114814916952353436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30737,6 +30710,8 @@ MonoBehaviour:
   clipanimation: {fileID: 0}
   target: {fileID: 0}
   maxDistance: 0
+  distanceToCenter: 0
+  distanceTostartingPoint: 0
   inAir: 0
   upWardForce: 0
   currentJumpingPad: {fileID: 4110711212568920}
@@ -30791,32 +30766,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761c123f2e6e94b5796e028f08a56927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialCameraPosition: {x: -14.7, y: 13.8, z: -17}
-  initialCameraAngle: {x: 90, y: 0, z: 0}
+  initialCameraPosition: {x: -31.8, y: 29.5, z: 8.9}
+  initialCameraAngle: {x: 15.318, y: 68.743, z: 0}
   upWardForce: 10
   maxDistance: 10
   startingDistance: 0
   playerInLevel: {fileID: 1202925755228212}
   startingCameraPosition: 0
-  SavedCameraPosition: 0
+  savedCameraPosition: 0
   cameraPosition:
   - cameraMovement: 1
     cameramovementCoordinates:
-      cameraPosition: {x: 27.3, y: 24, z: -27}
-      cameraAngle: {x: 54.70001, y: 308.4, z: 0.0000029549624}
-      addDelay: 1
-      delay: 1.5
-      cameraMovementduration: 3.5
-      cameraRotationduration: 3.5
-      connectWIthNextAnimation: 1
-      readyTojump: 0
-      followCamera: 0
-      upForce: 0
-      maxDistance: 0
-      landingTarget: {fileID: 0}
-      distanceTocenter: 0
-      distanceToTargetsStartingPoint: 0
-      easeType: 7
+      cameraPosition: {x: -31.8, y: 29.5, z: 8.9}
+      cameraAngle: {x: 15.317997, y: 68.743004, z: 0}
+      addDelay: 0
+      delay: 0
+      cameraMovementduration: 0
+      cameraRotationduration: 0
+      connectWIthNextAnimation: 0
+      readyTojump: 1
+      followCamera: 1
+      upForce: 12
+      maxDistance: 15
+      landingTarget: {fileID: 1930832348979778}
+      distanceTocenter: 9.5
+      distanceToTargetsStartingPoint: 9
+      easeType: 1
       fade: 0
       fadePoints: []
   - cameraMovement: 1
@@ -30914,6 +30889,7 @@ MonoBehaviour:
       easeType: 7
       fade: 0
       fadePoints: []
+  cameraSetup: []
   indicatingCircle:
   - {fileID: 1303258396367384}
   - {fileID: 1799676369002098}

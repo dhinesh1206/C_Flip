@@ -118,10 +118,8 @@ public class GameManager : MonoBehaviour
 
     public void MoveScore(GameObject scoreText)
     {
-        scoreText.transform.DOMoveY(scoreText.transform.position.y + 200f, 2.5f).OnComplete(() =>
-        {
-            Destroy(scoreText);
-        });
+        scoreText.transform.DOMoveY(scoreText.transform.position.y + 200f, 2.5f);
+        Destroy(scoreText, 2f);
         scoreText.GetComponent<Text>().DOFade(0, 2.5f);
         
     }
@@ -383,6 +381,14 @@ public class GameManager : MonoBehaviour
         gameStarted = true;
         CreateLevel();
     }
+
+    #region ScoreManagement
+    public void AddScoreFromFallingObjects()
+    {
+
+    }
+    #endregion
+
 }
 
 

@@ -21,6 +21,7 @@ public class AddJumpingAngle : MonoBehaviour
     float tempdistance;
     bool intarget;
     public Transform currentJumpingPad;
+    bool pressed;
 
     private void Awake()
     {
@@ -52,19 +53,9 @@ public class AddJumpingAngle : MonoBehaviour
         //upWardForce = LevelSetup.instance.upWardForce;
         maxDistance = LevelSetup.instance.maxDistance;
         distanceTostartingPoint = LevelSetup.instance.startingDistance;
-        //float circleSize = (maxDistance / 2) - LevelSetup.instance.startingDistance;
-        //print(circleSize);
-        //print(maxDistance);
-       // float percentageOfGreen = circleSize / (maxDistance/2);
-        //float circleWidth =900 * (percentageOfGreen*2);
-        //print(circleWidth);
         jumpingAngle = Vector3.zero;
         //jumpingAngle = Vector3.zero;
         fullJumpingAngle = jumpingAngle;
-        // tempdistance = Vector3.Distance((fullJumpingAngle + (transform.forward * maxDistance)), ( jumpingAngle + (transform.forward * (maxDistance * 0.01f))));
-        //tempdistance = (Vector3.Distance((fullJumpingAngle + (transform.forward * maxDistance)), (jumpingAngle * (maxDistance*0.01f))));
-        // print(tempdistance);
-        //GameManager.instance.greenImage.rectTransform.sizeDelta = new Vector2(circleWidth*2, circleWidth*2);
         tempdistance = 0;
        // initialPlayerPosition = transform.position;
     }
@@ -83,11 +74,7 @@ public class AddJumpingAngle : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "PickUpObjects")
-        {
-            GameManager.instance.ObjectPointIncrement(collision.gameObject.GetComponent<ScoreManagement>().objectScoreType, collision.gameObject.transform.position, collision.gameObject.GetComponent<ScoreManagement>().textColour);
-            Time.timeScale = 0.5f;
-        }
+        
     }
 
     /*private void OnCollisionEnter(Collision collision)
@@ -234,17 +221,23 @@ public class AddJumpingAngle : MonoBehaviour
                 {
                    
                 } 
-                else 
+                else
                 {
                     GameManager.instance.GameOverScreen();
                 }
             }
         }
 
+        if(!pressed && inAir)
+        {
+            gameObject.transform.Rotate(Vector3.right * Time.deltaTime * 75);
+        }
+
         if (GameManager.instance.gameStarted && !GameManager.instance.gameOver && !GameManager.instance.landed && GameManager.instance.readytoJump && !EventSystem.current.IsPointerOverGameObject())
         {
             if(Input.GetMouseButtonDown(0))
             {
+                pressed = true;
                 if (!inAir)
                 {
                     GameManager.instance.playerInLevel.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
@@ -260,7 +253,7 @@ public class AddJumpingAngle : MonoBehaviour
                     if (tempdistance < maxDistance)
                     {
                         tempdistance += maxDistance * 0.01f;
-                        print(tempdistance);
+                        //print(tempdistance);
                         if(tempdistance>distanceTostartingPoint)
                         {
                             // print(tempdistance);
@@ -288,6 +281,7 @@ public class AddJumpingAngle : MonoBehaviour
             }
             else if (Input.GetMouseButtonUp(0) && !GameManager.instance.landed && !GameManager.instance.gameOver)
             {
+                pressed = false;
                 playerAnimator.ForceStateNormalizedTime(1);
                 playerAnimator.SetFloat("Velocity", GameManager.instance.outAnimationSpeed);
                 if (!inAir)
